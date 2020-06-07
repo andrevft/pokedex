@@ -29,8 +29,6 @@
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
 * [FAQ](#postbox-faq)
-* [Found a bug? Missing a specific feature?](#bug-issues)
-* [Contributing](#tada-contributing)
 * [License](#closed_book-license)
 
 
@@ -43,7 +41,7 @@
 
 # :construction_worker: Installation
 
-**You need to install [NPM](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
+**You need to install [NPM](https://www.npmjs.com/) first, then in order to clone the project via HTTPS, run this command:**
 
 ```git clone https://github.com/Andrevft/pokedex.git```
 
@@ -73,7 +71,7 @@ In order to run the application, run the following command:
 
 You may prefer to manually configure the database and the application.
 
-Install [NPM](https://www.postgresql.org/) then run the following commands in order to create a EXPO enviroment.
+Install [NPM](https://www.npmjs.com/) then run the following commands in order to create a EXPO enviroment.
 
 ```
 
@@ -98,7 +96,7 @@ expo install @expo-google-fonts/robotonpm straa expo-font
 
 **Question:** What are the tecnologies used in this project?
 
-**Answer:** The tecnologies used in this project are [NPM](http://expressjs.com/en/) to handle the server, , [EXPO](https://mozilla.github.io/nunjucks/templating.html) to develop amazing views, [AXIOS](https://mozilla.github.io/nunjucks/templating.html) to develop amazing views, [React-Navigation](https://sass-lang.com/documentation/syntax) to handle the styles architecture and a better maintenance than normal CSS, [expo-google-fonts](https://sass-lang.com/documentation/syntax), [expo-constants](https://sass-lang.com/documentation/syntax)
+**Answer:** The tecnologies used in this project are [NPM](https://www.npmjs.com/) to manage the packages , [EXPO](https://expo.io/) the fastest way to build an apps, [AXIOS](https://github.com/axios/axios) promise based HTTP client for the browser and node.js, [React-Navigation]https://reactnavigation.org/) Routing and navigation for your React Native apps, [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/), [expo-constants](https://docs.expo.io/versions/latest/sdk/constants/).
 
 For instructions on using the Expo app, check out the Expo docs [here](https://docs.expo.io/versions/latest/).
 

@@ -18,9 +18,8 @@
 > All the pokémon you love in one place. We use pokeapi to enable you to access over 800 pokémon from all generations and regions. 
 
 <br />
-<p align="center"><img src=".github/home.gif?raw=true"/></p>
-<p align="center"><img src=".github/toggle_theme.gif?raw=true"/></p>
-<p align="center"><img src=".github/admin.gif?raw=true"/></p>
+<p align="center"><img src=".github/start.gif?raw=true"/></p>
+
 
 ---
 
@@ -39,13 +38,12 @@
 
 * 🌏 Explore Pokemon list. ACCESS OVER 800+.
 * 📨 Every pokémon has all sort of stats!.
-
-
+* 📄 Infinite Scrolling
 
 
 # :construction_worker: Installation
 
-**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
+**You need to install [NPM](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
 
 ```git clone https://github.com/Andrevft/pokedex.git```
 
@@ -101,6 +99,9 @@ expo install @expo-google-fonts/robotonpm straa expo-font
 **Question:** What are the tecnologies used in this project?
 
 **Answer:** The tecnologies used in this project are [NPM](http://expressjs.com/en/) to handle the server, , [EXPO](https://mozilla.github.io/nunjucks/templating.html) to develop amazing views, [AXIOS](https://mozilla.github.io/nunjucks/templating.html) to develop amazing views, [React-Navigation](https://sass-lang.com/documentation/syntax) to handle the styles architecture and a better maintenance than normal CSS, [expo-google-fonts](https://sass-lang.com/documentation/syntax), [expo-constants](https://sass-lang.com/documentation/syntax)
+
+For instructions on using the Expo app, check out the Expo docs [here](https://docs.expo.io/versions/latest/).
+
 ##
 
 

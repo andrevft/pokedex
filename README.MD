@@ -52,7 +52,7 @@ SSH URLs provide access to a Git repository via SSH, a secure protocol. If you h
 
 **Install dependencies**
 
-```npm install -g expo-cli```
+
 
 ```npm install```
 
@@ -65,8 +65,9 @@ Create your enviroment variables.
 
 In order to run the application, run the following command:
 
-```npm start````
+```npm start```
 
+Before you can run this app, you have to first install Expo App on your device.[IOS](https://itunes.com/apps/exponent.) / [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
 
 **Manually setup**
 
@@ -77,19 +78,14 @@ Install [NPM](https://www.npmjs.com/) then run the following commands in order t
 ```
 
 npm install -g expo-cli
-npm install
-
+expo init mobile
 npm install axios
-
-
 npm install @react-navigation/native
 expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 npm install @react-navigation/stack
-
-
-
 expo install expo-constants
 expo install @expo-google-fonts/robotonpm straa expo-font
+
 ```
 
 

@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { MaterialIcons as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { View, FlatList, Image, Text, TouchableOpacity, SafeAreaView, ActivityIndicator } from 'react-native';
+import { View, FlatList, Image, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 
 import api from '../../services/api';
 
 import logoImg from '../../assets/logo1.png';
 
 import styles from './styles';
-//import { set } from 'react-native-reanimated';
-
 
 
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
   const [header, setHeader] = useState([]);
-
   const [total, setTotal] = useState();
   const [offset, setOffset] = useState(0);
+  const [incidentid, setIncidentId] = useState(1);
   const [loading, setLoading] = useState(false);
 
   const navigation = useNavigation();
-
 
   function navigateToDetail() {
     navigation.navigate('Detail');
@@ -38,31 +35,29 @@ export default function Incidents() {
   }
 
 
-///////////  Função para scroll infinito
+  ///////////  Função para scroll infinito
 
-    async function loadIncidents() {
-      if (loading) {
-        return;
-      }
-
-      if (total > 0 && incidents.length === total) {
-        return;
-      }
-
-
-
-      setLoading(true);
-
-      const response = await api.get(`pokemon/?limit=20&offset=${offset}`);
-
-       setIncidents([...incidents, ...response.data.results]);
-       setTotal(header.count);
-       setOffset(offset + 20);
-       setLoading(false);
-
+  async function loadIncidents() {
+    if (loading) {
+      return;
     }
 
-////////////////////////
+    if (total > 0 && incidents.length === total) {
+      return;
+    }
+
+    setLoading(true);
+
+    const response = await api.get(`pokemon/?limit=20&offset=${offset}`);
+
+    setIncidents([...incidents, ...response.data.results]);
+    setTotal(header.count);
+    setOffset(offset + 20);
+    setLoading(false);
+
+  }
+
+  ////////////////////////
 
   useEffect(() => {
     loadHeader();
@@ -76,16 +71,11 @@ export default function Incidents() {
     <SafeAreaView style={{ flex: 1 }}>
 
       <View style={styles.container}>
-    
 
-          <View style={styles.header}>
+        <View style={styles.header}>
           <Image source={logoImg} />
           <Text style={styles.headerTextBold}> Bem-Vindx!</Text>
-
-
-
         </View>
-
 
         <FlatList
           data={incidents}
@@ -97,16 +87,13 @@ export default function Incidents() {
           onEndReachedThreshold={0.2}
 
           renderItem={({ item: incident }) => (
-
             <View style={styles.incident}>
               <TouchableOpacity
-
                 onPress={() => navigateToDetail(incident)}
-              >
-
+                      >
                 
-                <Text style={styles.incidentValue}>{incident.name}</Text>
-
+                <Text style={styles.incidentValue}>{incident.name}{incident.id}</Text>
+                {}
                 <View
                   style={styles.detailsButton}
                   onPress={() => navigateToDetail(incident)}
@@ -118,10 +105,8 @@ export default function Incidents() {
             </View>
           )}
 
-
         />
       </View>
     </SafeAreaView>
-
   );
 }

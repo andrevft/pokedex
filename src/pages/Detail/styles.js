@@ -30,7 +30,6 @@ export default StyleSheet.create({
   
   },
 
-
   incident: {
     paddingHorizontal: 8,
     paddingVertical: 8,
@@ -49,21 +48,19 @@ export default StyleSheet.create({
     elevation: 4,
   },
 
-
   scrollImg: {
-    padding:0,
-    paddingTop:32,
-  
-
+    paddingHorizontal:8,
+    paddingTop:8,
   },
   
   pokemonImg:{
-    width: 200,
-    height: 170,
-    padding:0,
-    margin:0,
+    width: 180,
+    height: 180,
+  },
 
-
+  pokemonImgBox:{
+    width: 180,
+    height: 180,
   },
 
   incidentDetails: {
@@ -72,7 +69,6 @@ export default StyleSheet.create({
     backgroundColor: '#f5f5f6',
     marginBottom: 8,
     marginTop: 8,
-
   },
 
   incidentId: {
@@ -107,6 +103,31 @@ export default StyleSheet.create({
 
   abilityView:{
     flexDirection: 'row',
-  }
+    flexWrap: 'wrap'
+  },
+
+  incidentAbilityBox:{
+    paddingVertical: 8,
+    paddingHorizontal: 8,
+    backgroundColor: '#fff',
+    marginRight:16,
+    marginBottom: 8,
+    marginTop: 8,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.20,
+    shadowRadius: 1.41,
+    
+    elevation: 2,
+  },
+
+  incidentAbilityText:{
+    color: '#41414d',
+    fontSize: 16,
+    fontFamily: 'Roboto_500Medium',
+  },
 
 });

@@ -18,7 +18,7 @@
 > All the pokémon you love in one place. We use pokeapi to enable you to access over 800 pokémon from all generations and regions. 
 
 <br />
-<p align="center"><img src=".github/start.gif?raw=true"/></p>
+<p align="center"><img src=".github/start.gif?raw=true"/>&nbsp;&nbsp;&nbsp; <img src=".github/details2.gif?raw=true"/></p>
 
 
 ---
@@ -37,6 +37,7 @@
 * 🌏 Explore Pokemon list. ACCESS OVER 800+.
 * 📨 Every pokémon has all sort of stats!.
 * 📄 Infinite Scrolling
+* 🔲 Material Design
 
 
 # :construction_worker: Installation

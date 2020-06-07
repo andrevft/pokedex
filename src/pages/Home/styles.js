@@ -54,6 +54,11 @@ export default StyleSheet.create({
     elevation: 4,
   },
 
+  pokemonImg:{
+    width: 180,
+    height: 180,
+  },
+
   incidentProperty: {
     fontSize: 14,
     color: '#0d47a1',

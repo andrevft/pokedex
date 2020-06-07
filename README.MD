@@ -76,7 +76,6 @@ You may prefer to manually configure the database and the application.
 Install [NPM](https://www.npmjs.com/) then run the following commands in order to create a EXPO enviroment.
 
 ```
-
 npm install -g expo-cli
 expo init mobile
 npm install axios
@@ -85,7 +84,7 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 npm install @react-navigation/stack
 expo install expo-constants
 expo install @expo-google-fonts/robotonpm straa expo-font
-
+npm start
 ```
 
 
@@ -93,7 +92,7 @@ expo install @expo-google-fonts/robotonpm straa expo-font
 
 **Question:** What are the tecnologies used in this project?
 
-**Answer:** The tecnologies used in this project are [NPM](https://www.npmjs.com/) to manage the packages , [EXPO](https://expo.io/) the fastest way to build an apps, [AXIOS](https://github.com/axios/axios) promise based HTTP client for the browser and node.js, [React-Navigation]https://reactnavigation.org/) Routing and navigation for your React Native apps, [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/), [expo-constants](https://docs.expo.io/versions/latest/sdk/constants/).
+**Answer:** The tecnologies used in this project are [NPM](https://www.npmjs.com/) to manage the packages , [EXPO](https://expo.io/) the fastest way to build an apps, [AXIOS](https://github.com/axios/axios) promise based HTTP client for the browser and node.js, [React-Navigation](https://reactnavigation.org/) Routing and navigation for your React Native apps, [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/), [expo-constants](https://docs.expo.io/versions/latest/sdk/constants/).
 
 For instructions on using the Expo app, check out the Expo docs [here](https://docs.expo.io/versions/latest/).
 
